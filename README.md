@@ -25,5 +25,11 @@ npm run server
 After that run below command onn postman 
 > http://localhost:5000
 
+## To Connect the mongoDb to server
+Assumption - we have a account created on mongoDB Atlas | User created | IP address configured
+> Click on connect button on MongoDb Atlas - https://cloud.mongodb.com/v2/64e2ebf0d003ef22be25f751#/overview ( login with ashrafaftab64)
+
+MongoDB Atlas - "mongoURI": "mongodb+srv://ashrafaftab64:iSB2eBhxbwICXWWL@cluster0.grm3vd1.mongodb.net/?retryWrites=true&w=majority"
+local mongoDb - "mongoURI": "mongodb://localhost:27017"
 
 
