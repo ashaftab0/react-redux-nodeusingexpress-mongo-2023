@@ -33,3 +33,6 @@ MongoDB Atlas - "mongoURI": "mongodb+srv://ashrafaftab64:iSB2eBhxbwICXWWL@cluste
 local mongoDb - "mongoURI": "mongodb://localhost:27017"
 
 
+In order to interact with database, we need to create a model for each resources
+ > Need to create a schema (mongoose schema), which holds the different fields that we want to have in any particular resources
+
