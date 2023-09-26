@@ -36,3 +36,14 @@ local mongoDb - "mongoURI": "mongodb://localhost:27017"
 In order to interact with database, we need to create a model for each resources
  > Need to create a schema (mongoose schema), which holds the different fields that we want to have in any particular resources
 
+
+ # router.get('/', (req, res) => {})
+To access the `body` key in req object as (req.body), have to use body.parser BUT now express only provide it (no need to explicitly add the body parser in the project)
+instead of `app.use(bodyParser.json())` we can use below code ( using the express)
+`app.use(express.json({ extended: false }))`
+
+# Validation on the fields of database : const { check, validationResult } = require('express-validator/check')
+    const errors = validationResult(req);
+    if (!errors.isEmpty()) {
+        return res.status(400).json({ errors: errors.array() });
+    }

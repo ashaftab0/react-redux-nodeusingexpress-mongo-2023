@@ -10,11 +10,15 @@ const postsRoute = require('./routes/api/posts');
 //Connect Database
 connectDB();
 
+// Init Middleware
+app.use(express.json({ extended: false }));
+
 // Define Routes
 app.use('/api/users', userRoute);
 app.use('/api/auth', authRoute);
 app.use('/api/profile', profileRoute);
 app.use('/api/posts', postsRoute);
+
 
 app.get('/', (re, res) => res.send('API Running Woo'));
 
