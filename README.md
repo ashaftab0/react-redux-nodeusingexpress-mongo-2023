@@ -47,3 +47,7 @@ instead of `app.use(bodyParser.json())` we can use below code ( using the expres
     if (!errors.isEmpty()) {
         return res.status(400).json({ errors: errors.array() });
     }
+
+
+  # NOTE:
+  where ever returning a promise, use the `await` inside the `async` function  
